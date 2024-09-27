@@ -2,9 +2,15 @@
 
 ## Linux  
 ### Using system libraries  
-- required system libraries:  
+- install the required system libraries:  
 	- ```jsoncpp```  
-	- ```hidapi```  
+    
+        $ sudo apt install libjsoncpp-dev
+
+	- ```hidapi```
+        
+        $ sudo apt install libhidapi-dev
+
 - clone repository: ```git clone git@github.com:Sayobot/Sayo_CLI.git```  
 - install udev rules: copy ```98-saybot.rules``` to ```/etc/udev/rules.d```  
 - reload udev rules: ```sudo udevadm control --reload-rules```  
